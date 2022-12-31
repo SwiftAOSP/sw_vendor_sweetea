@@ -13,12 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SWIFTIFY_PATH := vendor/swiftify
+TEA_PATH := vendor/sweetea
 
-include $(call all-subdir-makefiles,$(SWIFTIFY_PATH))
+include $(call all-subdir-makefiles,$(TEA_PATH))
 
 #Include AOSP Audio
-include $(SWIFTIFY_PATH)/configs/aosp-audio.mk
+include $(TEA_PATH)/configs/aosp-audio.mk
 
 #Include Swift Overlays
-include $(SWIFTIFY_PATH)/configs/overlays.mk
+include $(TEA_PATH)/configs/overlays.mk
